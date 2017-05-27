@@ -58,9 +58,9 @@ class PhpunitTestCommand(sublime_plugin.WindowCommand):
 
     def run_in_terminal(self, command):
         settings = sublime.load_settings("Preferences.sublime-settings")
-        terminal_setting = settings.get('phpunit-sublime-terminal', 'bash')
+        terminal_setting = settings.get('phpunit-sublime-terminal', 'powershell')
 
-        cmd = 'powershell -NoExit -Command "' + command + '"'
+        cmd = 'powershell -NoExit -NoLogo "' + command + '"'
 
         os.system(cmd)
 
