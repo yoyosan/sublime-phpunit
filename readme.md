@@ -20,7 +20,7 @@ By default, this package uses Window's cmd.exe application due to how `os.system
 
 ```
 $ git clone git@github.com:yoyosan/sublime-phpunit.git /home/`whoami`/.config/sublime-text-3/Packages
-# instal terminator package
+# install terminator package
 # Fedora
 $ sudo dnf install terminator -y
 # Ubuntu
