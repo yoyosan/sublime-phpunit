@@ -40,7 +40,6 @@ class PhpunitTestCommand(sublime_plugin.WindowCommand):
 
     def find_phpunit_bin(self, directory):
         search_paths = [
-            'vendor/bin/phpunit',
             'vendor/phpunit/phpunit/phpunit',
         ]
 
@@ -64,8 +63,6 @@ class PhpunitTestCommand(sublime_plugin.WindowCommand):
             cmd = 'terminator -b -m -e "' + command + ' && read -r -n 1"'
         else:
             cmd = 'powershell -NoExit -NoLogo "' + command + '" ; pause ; exit'
-
-        print(cmd)
 
         os.system(cmd)
 
