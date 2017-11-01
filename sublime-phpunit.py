@@ -60,7 +60,7 @@ class PhpunitTestCommand(sublime_plugin.WindowCommand):
         # settings = sublime.load_settings("Preferences.sublime-settings")
         # terminal_setting = settings.get('phpunit-sublime-terminal', 'powershell')
         if sys.platform == 'linux' or sys.platform == 'linux2':
-            cmd = 'terminator -b -m -e "' + command + ' && read -r -n 1"'
+            cmd = 'terminator -b -m -e "' + command + ' ; read -r -n 1"'
         else:
             cmd = 'powershell -NoExit -NoLogo "' + command + '" ; pause ; exit'
 
