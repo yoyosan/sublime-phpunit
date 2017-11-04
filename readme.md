@@ -10,11 +10,14 @@ test on those versions.
 
 ### Windows
 
-Just `git clone` this repo into your `'C:\Users\<your_user>\AppData\Roaming\Sublime Text 3/Packages'` directory and
-you're good to go.
+```
+git clone git@github.com:yoyosan/sublime-phpunit.git 'C:\Users\<your_user>\AppData\Roaming\Sublime Text 3/Packages'
+```
 
-By default, this package uses Window's cmd.exe application due to how `os.system` works in Python 3, for Windows. Read
+Note that, by default, this package uses Window's `cmd.exe` application due to how `os.system` works in Python 3, for Windows. Read
 [here](https://docs.python.org/3/library/os.html#os.system) to find out more.
+
+Therefore, there **won't be any colouring** of the output :(
 
 ### Linux
 
