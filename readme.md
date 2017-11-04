@@ -44,7 +44,8 @@ run_all_phpunit_tests
 ## Future plans
 
 - [X] Support for Linux.
-- [ ] Refactor code a bit.
+- [X] Refactor code a bit.
+- [X] Add support for running tests with a data provider.
 
 ## Credits
 
